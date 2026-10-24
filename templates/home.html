@@ -1,0 +1,59 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ECOM</title>
+
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+
+</head>
+
+<body>
+
+<nav>
+
+    <div class="logo">
+        ECOM
+    </div>
+
+    <div class="links">
+
+        <a href="{% url 'home' %}">HOME</a>
+        <a href="{% url 'electronics' %}">ELECTRONICS</a>
+        <a href="{% url 'fashion' %}">FASHION</a>
+        <a href="{% url 'mobiles' %}">MOBILES</a>
+        <a href="{% url 'fresh' %}">FRESH</a>
+        <a href="{% url 'healthcare' %}">HEALTHCARE</a>
+        <a href="{% url 'about' %}">ABOUT</a>
+
+
+    </div>
+
+</nav>
+
+
+<h1>HOME PAGE</h1>
+
+<div class="box">
+
+    <img src="{% static 'images/ff1.jpg' %}" alt="">
+    <img src="{% static 'images/m2.jpg' %}" alt="">
+    <img src="{% static 'images/ff3.jpg' %}" alt="">
+    <img src="{% static 'images/h4.jpg' %}" alt="">
+    <img src="{% static 'images/h5.jpg' %}" alt="">
+    <img src="{% static 'images/ff6.jpg' %}" alt="">
+    <img src="{% static 'images/f7.jpg' %}" alt="">
+    <img src="{% static 'images/ff8.jpg' %}" alt="">
+
+</div>
+</body>
+</html>
